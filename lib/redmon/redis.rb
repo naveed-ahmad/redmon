@@ -15,7 +15,7 @@ module Redmon
     ]
 
     def redis
-      @redis ||= ::Redis.new(Redmon.config.redis)
+      @redis ||= ::Redis.new(Redmon.config.redis_url)
     end
 
     def ns
